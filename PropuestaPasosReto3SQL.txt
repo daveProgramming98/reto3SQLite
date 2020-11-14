@@ -1,0 +1,165 @@
+---------------------------------
+Consulta 0
+---------------------------------
+¿Que tablas necesito?
+- Client
+
+¿Que columnas necesito?
+- Career (De la Tabla Client)
+
+Funciones 
+- ASC -> Para ordenar alfabeticamente la columna Career
+
+Posible Estructura para la Busqueda (1 columna)
+SELECT 
+FROM 
+GROUP BY 
+ORDER BY 
+;
+---------------------------------
+Consulta 1
+---------------------------------
+¿Que tablas necesito?
+- Client
+
+¿Que columnas necesito?
+- Career (De la Tabla Client)
+
+Funciones 
+- COUNT() -> Para contar los valores repetidos (Career)
+- ASC -> Para ordenar alfabeticamente la columna Career
+- DESC () -> Para ordenar de mayor a menor (por la columna cantidad clientes)
+
+Posible Estructura para la Busqueda (2 columnas)
+SELECT 
+FROM 
+GROUP BY 
+ORDER BY 
+;
+---------------------------------
+Consulta 2
+---------------------------------
+¿Que tablas necesito?
+- Card
+- ClientCard (LEFT JOIN)
+
+¿Que columnas necesito?
+- Card (De la Tabla Card)
+- idCard (De la Tabla ClientCard)
+
+Funciones 
+- ASC -> Para ordenar alfabeticamente la columna Card
+
+Posible Estructura para la Busqueda (1 columna)
+SELECT 
+FROM 
+LEFT JOIN 
+ON 
+WHERE ----> IS NULL
+GROUP BY 
+ORDER BY 
+;
+---------------------------------
+Consulta 3
+---------------------------------
+¿Que tablas necesito?
+- AccountStatus
+- Client (INNER JOIN)
+
+¿Que columnas necesito?
+- Account Status (De la Tabla AccountStatus)
+- idAccountStatus (De la Tabla Client)
+
+Funciones 
+- COUNT() -> Para contar los valores repetidos (Account Status)
+- ASC -> Para ordenar alfabeticamente la columna Account Status
+
+Posible Estructura para la Busqueda (2 columnas)
+SELECT 
+FROM 
+INNER JOIN 
+ON 
+GROUP BY 
+ORDER BY 
+;
+---------------------------------
+Consulta 4
+---------------------------------
+¿Que tablas necesito?
+- Client
+- ClientCard (INNER JOIN)
+
+¿Que columnas necesito?
+- First Name (De la Tabla Client)
+- Last Name (De la Tabla Client)
+- id (De la Tabla Client)
+- idClient (De la Tabla Client Card)
+- idCard (De la Tabla Client Card)
+
+Funciones 
+- COUNT() -> Para contar los valores repetidos (First Name + Last Name)
+- SUBSTR() -> Para obtener 2 caracteres (idCard)
+- ASC -> Para ordenar alfabeticamente la columna (First Name + Last Name)
+
+Posible Estructura para la Busqueda (1 columna)
+SELECT 
+FROM 
+INNER JOIN 
+ON 
+WHERE 
+GROUP 
+HAVING 
+ORDER BY 
+;
+---------------------------------
+Consulta 5
+---------------------------------
+¿Que tablas necesito?
+- Hometown
+- Client (INNER JOIN)
+
+¿Que columnas necesito?
+- Hometown (De la Tabla Hometown)
+- Age (De la Tabla Client)
+- idHometown (De la Tabla Hometown)
+- idHometown (De la Tabla Client)
+
+Funciones 
+- ROUND() -> Para redondear a 2 decimales (Age)
+- AVG() -> Para obtener el promedio (Age)
+- DESC () -> Para ordenar de mayor a menor (por la columna cantidad Age)
+- ASC () -> Para ordenar por orden alfabetico (por la columna cantidad Hometown)
+
+Posible Estructura para la Busqueda (2 columnas)
+SELECT 
+FROM 
+INNER JOIN 
+ON 
+GROUP BY 
+HAVING 
+ORDER BY 
+;
+---------------------------------
+Consulta 6
+---------------------------------
+¿Que tablas necesito?
+- Client 
+- Hometown (INNER JOIN)
+
+¿Que columnas necesito?
+- mail (De la Tabla Client)
+- idHometown (De la Tabla Client)
+- idHometown (De la Tabla Hometown)
+
+Funciones 
+- INSTR() -> Para obtener una posicion X de una columna (mail)
+- UCASE () -> Para poner en mayuscula los datos de la columna (mail)
+- SUBSTR() -> Para obtener X cantidad de caracteres entre un inicio Y y un final Z (mail)
+
+Posible Estructura para la Busqueda (3 columnas)
+SELECT 
+FROM 
+INNER JOIN 
+ON 
+ORDER BY 
+;
