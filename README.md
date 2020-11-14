@@ -1,6 +1,6 @@
 # Reto #3 Ciclo 2 UTP "Repaso/Explicación SQLite + De BD ACCESS a SQLite + Solución" - SQLite - Mision TIC 2022
 
-Video Explicación: 
+Video Explicación: https://youtu.be/4QksE8e8D_o
 
 → En el archivo PropuestaPasosReto3SQL.txt, encontraras los pasos, por si lo quieres resolver sin ver la solución.
 
